@@ -1,6 +1,6 @@
-package hotel.web.model;
+package hotel.maven.model;
 
-import hotel.web.entity.Hotel;
+import hotel.maven.entity.Hotel;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -84,7 +84,7 @@ public class HotelDAO implements IHotelDAO {
 
 	return hotel;
     }
-    
+
     @Override
     public long updateHotel(Hotel hotel) throws ClassNotFoundException, SQLException {
 	Map<String, Object> updKeyRec = new HashMap<>();

@@ -1,4 +1,6 @@
-package hotel.web.entity;
+package hotel.maven.entity;
+
+import java.io.Serializable;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -11,7 +13,7 @@ package hotel.web.entity;
  *
  * @author cvadmin
  */
-public class Hotel {
+public class Hotel implements Serializable {
     private int hotelId;
     private String hotelName;
     private String streetAddress;

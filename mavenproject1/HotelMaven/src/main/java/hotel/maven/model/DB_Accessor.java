@@ -1,4 +1,4 @@
-package hotel.web.model;
+package hotel.maven.model;
 
 
 import java.sql.SQLException;

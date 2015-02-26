@@ -1,7 +1,7 @@
-package hotel.web.model;
+package hotel.maven.model;
 
 
-import hotel.web.entity.Hotel;
+import hotel.maven.entity.Hotel;
 import java.sql.SQLException;
 import java.util.List;
 

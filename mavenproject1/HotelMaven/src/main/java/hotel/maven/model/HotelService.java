@@ -1,6 +1,5 @@
-package hotel.web.model;
-
-import hotel.web.entity.Hotel;
+package hotel.maven.model;
+import hotel.maven.entity.Hotel;
 import java.util.List;
 
 /*
@@ -32,28 +31,28 @@ public class HotelService {
         return hotelDAO.getHotelById(hotelId);
     }
 
-    public final int deleteHotel(Hotel hotel) throws Exception {
+    public final long deleteHotel(Hotel hotel) throws Exception {
 
-        return 0;
+        return hotelDAO.deleteHotel(hotel);
     }
 
-    public final int addHotel(Hotel hotel) throws Exception {
+    public final long insertHotel(Hotel hotel) throws Exception {
 
-        return 0;
+        return hotelDAO.insertHotel(hotel);
     }
 
-    public final int updateHotel(Hotel hotel) throws Exception {
+    public final long updateHotel(Hotel hotel) throws Exception {
 
-        return 0;
+        return hotelDAO.updateHotel(hotel);
     }
 
     public static void main(String[] args) throws Exception {
 
-        HotelService hotelService = new HotelService();
-
-        List<Hotel> hotels = hotelService.getAllHotels();
-        for (Hotel hotel : hotels) {
-            System.out.println(hotel);
-        }
+//        HotelService hotelService = new HotelService();
+//
+//        List<Hotel> hotels = hotelService.getAllHotels();
+//        for (Hotel hotel : hotels) {
+//            System.out.println(hotel);
+//        }
     }
 }
